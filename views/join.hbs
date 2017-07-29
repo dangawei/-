@@ -1,0 +1,189 @@
+<link rel="stylesheet" href="/css/join.css">
+<link rel="stylesheet" href="/dist/css/bootstrapValidator.css">
+<header class="top">
+    <img src="/images/news_banner.jpg" alt="">
+</header>
+<div class="container section">
+    <div class="row">
+        <div class="col-lg-5 col-md-5 col-sm-6 col-xs-1">
+            <div class="j_logo">
+                <img src="/images/rczp.jpg" alt="">
+            </div>
+        </div>
+
+        <form id="defaultForm" class="form-horizontal bv-form col-md-6 col-sm-6 col-xs-10" novalidate="novalidate">
+            <!-- 姓名 -->
+            <div class="form-group has-feedback">
+                <label for="username" class="col-lg-3 col-md-2 col-sm-2 col-xs-2 control-label">姓 名</label>
+                <div class="col-lg-7 col-md-9 col-sm-9 col-xs-9">
+                    <input type="text" id="username" class="form-control" name="username" data-bv-field="username"><i
+                        class="form-control-feedback" data-bv-icon-for="username" style="display: none;"></i>
+                </div>
+            </div>
+
+            <!-- 性别 -->
+            <div class="form-group has-feedback">
+                <label class="col-lg-3 col-md-2 col-sm-2 col-xs-2 control-label">性 别</label>
+                <div class="col-lg-7 col-md-9 col-sm-9 col-xs-9">
+                    <div class="radio pull-left">
+                        <label>
+                            <input type="radio" name="gender" value="male" checked > 男
+                        </label>
+                    </div>
+                    <div class="radio col-lg-offset-2 col-md-offset-2 col-sm-offset-2 col-xs-offset-3">
+                        <label>
+                            <input type="radio" name="gender" value="female" > 女
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 电话号码 -->
+            <div class="form-group has-feedback">
+                <label for="mobile" class="col-lg-3 col-md-2 col-sm-2 col-xs-2 control-label">电 话</label>
+                <div class="col-lg-7 col-md-9 col-sm-9 col-xs-9">
+                    <input type="text" id="mobile" class="form-control" name="mobile" data-bv-field="mobile"><i
+                        class="form-control-feedback" data-bv-icon-for="mobile" style="display: none;"></i>
+                </div>
+            </div>
+
+            <!-- 地址 -->
+            <div class="form-group has-feedback">
+                <label for="address" class="col-lg-3 col-md-2 col-sm-2 col-xs-2 control-label">地 址</label>
+                <div class="col-lg-7 col-md-9 col-sm-9 col-xs-9">
+                    <input type="text" id="address" class="form-control" name="address" data-bv-field="address">
+                    <i class="form-control-feedback" data-bv-icon-for="address" style="display: none;"></i>
+                </div>
+            </div>
+
+            <!-- 邮箱 -->
+            <div class="form-group has-feedback">
+                <label for="email" class="col-lg-3 col-md-2 col-sm-2 col-xs-2 control-label">邮 箱</label>
+                <div class="col-lg-7 col-md-9 col-sm-9 col-xs-9">
+                    <input type="text" id="email" class="form-control" name="email" data-bv-field="email">
+                    <i class="form-control-feedback" data-bv-icon-for="email" style="display: none;"></i>
+                </div>
+            </div>
+
+            <!-- 备注 -->
+            <div class="form-group has-feedback">
+                <label for="note" class="col-lg-3 col-md-2 col-sm-2 col-xs-2 control-label">备注</label>
+                <div class="col-lg-9 col-md-10 col-sm-10 col-xs-10">
+                    <textarea class="form-control" id="note" name="note" rows="8"></textarea>
+                </div>
+            </div>
+
+            <!-- 验证码 -->
+            <div class="form-group has-feedback">
+                <label for="captcha" class="col-lg-3 col-md-2 col-sm-2 col-xs-2 control-label">验证码</label>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
+                    <input type="text" id="captcha" class="form-control" name="captcha" data-by-field="captcha">
+                    <i class="form-control-feedback" style="display: none"></i>
+                </div>
+                <div class="col-lg-3 col-md-2 col-sm-2 col-xs-2">
+                    <span id="verCode"></span>
+                </div>
+            </div>
+
+            <!-- 提交 && 重置 -->
+            <div class="form-group">
+                <div class="col-lg-9 col-lg-offset-3 col-md-offset-2 col-sm-offset-2 col-xs-offset-2">
+                    <button type="submit" class="btn btn-primary" name="submit" id="subBtn" value="submit">提 交</button>
+                    <button type="button" class="btn btn-info" id="resetBtn">重 置</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+<script type="text/javascript" src="/js/jquery.validate.js"></script>
+<script type="text/javascript" src="/dist/js/bootstrapValidator.js"></script>
+<!--<script type="text/javascript" src="/dist/js/zh_CN.js"></script>-->
+<script src="js/gVerify.js"></script>
+<script type="text/javascript">
+    // 生成验证码并添加验证
+    $('#defaultForm').validate();
+    var s = new GVerify("verCode");
+    function validateVerCode() {
+        if(!s.validate($('#captcha').val())){
+            return false;
+        }
+    }
+
+    // bootstrap 表单验证
+    $(document).ready(function () {
+        $('#defaultForm').bootstrapValidator({
+            message: '验证不通过',
+            feedbackIcons: {
+                valid: 'glyphicon glyphicon-ok',
+                invalid: 'glyphicon glyphicon-remove',
+                validating: 'glyphicon glyphicon-refresh'
+            },
+            fields: {
+                username: {
+                    message: '用户名无效',
+                    validators: {
+                        notEmpty: {
+                            message: '请填写您的名字'
+                        },
+                        stringLength: {
+                            min: 6,
+                            max: 30,
+                            message: '名字长度应为 6 ~ 30'
+                        },
+                        regexp: {
+                            regexp: /^[a-zA-Z0-9_]+$/,
+                            message: '用户名只能由字母、数字、点和下划线组成'
+                        }
+                    }
+                },
+                mobile: {
+                    validators: {
+                        notEmpty: {
+                            message: '请填写手机号，方便我们联系您'
+                        },
+                        regexp: {
+                            regexp: /^1[34578]\d{9}$/,
+                            message: '手机号 11 位'
+                        },
+                    }
+                },
+                address: {
+                    validators: {
+                        notEmpty: {
+                            message: '您还没输入地址'
+                        }
+                    }
+                },
+                email: {
+                    validators: {
+                        notEmpty: {
+                            message: '您好像忘了填写邮箱'
+                        },
+                        emailAddress: {
+                            message: '请输入正确的邮箱格式'
+                        }
+                    }
+                },
+                captcha: {
+                    trigger: 'blur',
+                    validators: {
+                        callback: {
+                            message: '验证码错误',
+                            callback: function (value,validator) {
+                                return validateVerCode();
+                            }
+                        }
+                    }
+                }
+            }
+        });
+
+        // 重置表单
+        $('#resetBtn').click(function () {
+            $('#defaultForm').data('bootstrapValidator').resetForm(true);
+            return false;
+        });
+    });
+</script>

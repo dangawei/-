@@ -1,0 +1,133 @@
+.bgcolor{
+    width: 100%;
+    background-image: url("../images/jj_bj.png");
+}
+.about{
+    text-align: center;
+    font-weight: bold;
+    margin-top: 60px;
+}
+#main{
+    text-align: center;
+}
+#main img{
+    margin: 0 auto;
+}
+.container{
+    padding: 0;
+    overflow: hidden;
+}
+.container .main{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.fb{
+    margin:30px 0;
+    width: 100%;
+    list-style:none;
+}
+.fb li{
+    margin: 30px 0;
+    display: block;
+    cursor: pointer;
+    color: #919191;
+    text-align: center;
+    height: 220px;
+}
+.fb li div{
+    width: 111px;
+    height: 111px;
+    padding-bottom: 10px;
+    display: block;
+    margin: 0 auto;
+}
+.fb li span{
+    margin-top: 18px;
+    font-size: 18px;
+    color: #1b9d80;
+    display: block;
+    line-height: 34px;
+}
+.list_one{
+    background: url(../images/jj_01.png) no-repeat top right;
+}
+.list_two{
+    background: url(../images/jj_02.png) no-repeat top right;
+}
+.list_three{
+    background: url(../images/jj_03.png) no-repeat top right;
+}
+.list_four{
+    background: url(../images/jj_04.png) no-repeat top right;
+}
+.on{
+    background: url("../images/jj_sl.png")no-repeat bottom center;
+}
+.on>div{
+    background-position: left;
+}
+.carousel-inner{
+    width: 100%;
+    margin:0 auto;
+}
+.container .page{
+    height: 700px;
+    text-align: center;
+}
+.page .blur {
+    -webkit-filter: blur(1px); /* chrome, opera */
+    -ms-filter: blur(1px); /*IE*/
+    -moz-filter: blur(2px);/*火狐*/
+    filter: blur(1px);
+}
+.page>p{
+    text-indent: 2em;
+    text-align: left;
+}
+.page div{
+    font-size: 16px;
+}
+.page strong{
+    line-height: 54px;
+    font-size: 19px;
+}
+@media screen and (max-width: 950px) {
+    .about{
+        margin-top: 20px;
+    }
+    .container .page{
+        height: 420px;
+        margin: 0 20px;
+    }
+    .fb_p{
+        display: none;
+    }
+    .fb_img{
+        display: none;
+    }
+    .container .page p{
+        font-size: 13px;
+    }
+    .container .page .fb_div{
+        font-size: 12px;
+    }
+    .container .page .fb_div strong{
+        line-height: 24px;
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 420px) {
+    .container .page{
+        height: 320px;
+        margin: 0 20px;
+    }
+    .fb_logo{
+        display: none;
+    }
+}
+@media screen and (max-width: 300px) {
+.fb{
+    display: none;
+}
+}

@@ -1,0 +1,46 @@
+<link rel="stylesheet" href="/css/recruit.css">
+<header class="top">
+    <img src="/images/news_banner.jpg" alt="">
+</header>
+<section class="rec_table">
+    <table class="table-responsive">
+        <thead>
+            <tr>
+                <th>职位</th>
+                <th>薪资待遇</th>
+                <th>招聘人数</th>
+                <th>结束时间</th>
+                <th>查看详情</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each data}}
+                <tr class="summary">
+                    <td><strong>{{job}}</strong></td>
+                    <td>{{salary}}</td>
+                    <td>{{num}}</td>
+                    <td>{{time}}</td>
+                    <td><a href="/join?job={{job}}">查看详情</a></td>
+                </tr>
+                <tr class="detail">
+                    <td colspan="5">
+                        <div>
+                            {{{detail}}}
+                            <button>
+                                <a href="/join?job={{job}}">应聘</a>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+            {{/each}}
+        </tbody>
+    </table>
+
+</section>
+
+<script>
+    $('.summary').click(function () {
+        $(this).next().stop().fadeToggle(500)
+        $('.detail div').eq($(this).index()/2).stop().slideToggle(500);
+    })
+</script>

@@ -1,0 +1,18 @@
+<link rel="stylesheet" href="../css/news_detail.css">
+<div class="row mt">
+    <img src="images/news_banner.jpg" alt="" class="img-responsive center-block">
+</div>
+
+<div class="container news_detail">
+    <div class="row ">
+        {{#each product}}
+            <h3>{{title}}</h3>
+            <div class="img">
+                <img src="{{img}}" class="img-responsive">
+            </div>
+
+            <div class="content">{{{content}}}</div>
+        {{/each}}
+    </div>
+
+</div>

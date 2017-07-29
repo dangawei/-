@@ -1,0 +1,98 @@
+.pd-banner{
+    background: url("../images/cp_bj.jpg") top center;
+    padding: 30px 0;
+}
+.pd-banner .container{
+    padding: 40px 0;
+}
+.pd-search{
+    position: relative;
+    top: 0px;
+}
+.pd-sec{
+    margin: 20px 0;
+}
+.pd-sec-name{
+    margin-bottom: 20px;
+}
+.pd-name-list{
+    border: 7px solid #f9f9f9;
+    line-height: 52px;
+}
+.pd-name-a{
+    display: inline-block;
+    height: 38px;
+    padding: 0 15px;
+    font-size: 14px;
+    line-height: 38px;
+}
+.pd-name-a:hover,.pd-box-bottom>a:hover{
+    text-decoration: none;
+    cursor: pointer;
+}
+.pd-box{
+    margin-bottom: 15px;
+}
+.pd-box-top,.pd-box-bottom{
+    border: 4px solid #f9f9f9;
+    margin-bottom: 10px;
+}
+.pd-box-bottom{
+    padding: 0 20px;
+}
+.pd-text-bLine{
+    padding: 0 0 10px 0;
+    color: #7b7b7b;
+    border-bottom: dotted 1px #000;
+}
+.pd-box-bottom a{
+    display: inline-block;
+    color: black;
+    padding: 15px 0;
+    width: 140px;
+    background: url("../images/cplist_more.png") no-repeat 70px center;
+}
+.pd-box:hover .pd-box-bottom,.pd-box:hover .pd-box-bottom a,.pd-box:hover .pd-text-bLine{
+    color: white;
+    background-color: #19bc98;
+}
+
+.page-p{
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px 0;
+    font-size: 12px;
+}
+.page-select{
+    border: 0;
+    outline: 0;
+}
+
+/*产品二级页面*/
+.pd-one{
+    margin: 15px 0;
+}
+.pd-one>h2{
+    color: #1b9d80;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+.pd-one-box{
+    padding: 0;
+    height: 54px;
+    border: 1px solid #eee;
+    border-top:8px solid #ccc;
+    line-height: 54px;
+}
+.pd-one-car-box{
+    padding: 0;
+}
+.pd-one-car-box .item{
+    padding: 20px;
+}
+.pd-one-car-box .item p{
+    text-indent: 2em;
+}
+.pd-one-box.active{
+    border-top: 8px solid #1b9d80;
+}

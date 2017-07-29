@@ -1,0 +1,98 @@
+body{
+    width: 100%;
+    overflow-x: hidden;
+}
+.nav{
+    position: relative;
+    top: 0;
+}
+.top{
+    margin-bottom: 50px;
+}
+
+.rec_table{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.rec_table table{
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+    line-height: 40px;
+}
+.rec_table thead{
+    color: #FFF;
+    background: #1B9D80;
+    height: 46px;
+    line-height: 46px;
+    width: 100%;
+}
+.rec_table .summary:hover{
+    cursor: pointer;
+}
+.rec_table th{
+    border: 1px solid #fff;
+}
+.rec_table td,.rec_table th{
+    padding: 0 16px;
+    text-align: center;
+}
+.rec_table a{
+    color: #333;
+    text-decoration: none;
+}
+.rec_table .summary a:hover{
+    color: #a90000;
+}
+.rec_table .detail p{
+    text-align: left;
+    margin: 0;
+    line-height: 30px;
+}
+
+@media screen and (max-width: 767px) {
+    header.top{
+        display: none;
+    }
+    .nav{
+        left: 0;
+    }
+    .j_logo{
+        display: none;
+    }
+}
+@media screen and (max-width: 500px){
+    .rec_table table{
+        line-height: 26px;
+    }
+    .rec_table td,.rec_table th{
+        padding: 0;
+        font-size: 12px;
+    }
+}
+.rec_table .summary{
+    border-bottom: 1px dashed #e5e5e5;
+}
+.detail{
+    border-bottom: 1px solid #888;
+    display: none;
+}
+.detail div{
+    position: relative;
+    display: none;
+}
+.detail button{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 96px;
+    height: 36px;
+    line-height: 36px;
+    border: none;
+    background: #1B9D80;
+    text-align: center;
+}
+.detail button a{
+    display: block;
+    color: #fff;
+}

@@ -1,0 +1,31 @@
+body{
+    background: url('/images/jj_bj.png') repeat-x top left;
+}
+.mt .title{
+    margin: 26px 0;
+}
+.service .row{
+    margin-bottom: 8px;
+}
+.service .row:nth-child(3){
+    padding: 30px 10px 10px 10px;
+}
+.service .row .small{
+    /*width: 100%;*/
+}
+.mt img{
+    max-width: inherit;
+}
+.service .row .small img,.service .row .lage img {
+    margin: 0 auto;
+    width: 100%;
+}
+.service .row .middle{
+    margin: 0 auto;
+    height: 217px;
+}
+@media screen and (max-width: 1200px) {
+    .service .row:nth-child(3) dl{
+        width: 100%;
+    }
+}

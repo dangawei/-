@@ -1,0 +1,117 @@
+<link rel="stylesheet" href="css/products.css">
+<section class="mt pd-banner">
+    <div class="container">
+        <div class="row margin-0">
+            <div class="col-lg-12 text-center">
+                <h2 class="text-white">产品工艺</h2>
+                <p class="text-white">坚持一流管理，生产一流产品，提供一流服务，创建一流企业</p>
+            </div>
+        </div>
+        <div class="row margin-0">
+            <div class="col-sm-6 col-sm-offset-3">
+                <div class="input-group">
+                    <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                    <span class="input-group-addon glyphicon glyphicon-search pd-search"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center pd-one">
+                {{#each product}}
+                    <h2>{{name}}</h2>
+                    <img class="img-responsive" style="margin: 0 auto;" src="{{img_url}}" alt="">
+                {{/each}}
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-sm-4 col-xs-4 pd-one-box text-center active"
+                 data-target="#carousel-example-generic" data-slide-to="0">
+                产品详情
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-4  pd-one-box text-center" data-target="#carousel-example-generic"
+                 data-slide-to="1">
+                工艺流程
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-4  pd-one-box text-center" data-target="#carousel-example-generic"
+                 data-slide-to="2">
+                在线订单
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12 pd-one-car-box">
+                <div id="carousel-example-generic" class="carousel slide" data-interval="0" data-ride="carousel">
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <p>
+                                中富科技隶属山水园林生态产业集团旗下，公司成立于2015年5月，注册资本金2000万元，位于河南省新乡市榆东产业集聚区，占地107亩，是一家集新能源开发、生态肥研发生产销售、固体废弃物再利用的生态环保高科技企业。生态建设已经成为实现中华民族伟大复兴的必由之路，建设美丽中国、生态中国已上升为国家战略，公司将肩负起“让祖国更生态”的企业使命，开发绿色清洁能源，保护生态环境，发展有机高效农业，保证食品安全，全力打造投资、研发、设计、设备制造、建设运营于一体的完整生态环保产业链，在全球视野中，彰显中国的生态环保创新力量!</p>
+                            <p>
+                                公司秉承“创新、绿色、服务、共享”的经营理念，加强与国内外知名院所及科研机构的合作，聚合国内外生态环保领域的高端人才、先进技术和设备，携手荷兰、德国等国际知名新能源研发企业，共同开发绿色清洁能源，发展有机生态农业。充分发挥各自优势，通过对农业、园林、养殖业及餐厨垃圾、生活垃圾等废弃物的回收再利用，开展生物质能发电、天然气工业化生产及生态肥的研发、生产、销售等。</p>
+                            <p>
+                                公司专门设立绿色能源研发实验室，对本土原材料特征进行实验分析，引进国际最先进的绿色能源技术及设备，通过对农牧业废弃物的回收，生产成为社会可再利用资源。公司的整套系统拥有欧洲CE认证，生产设备均达德国TÜV的要求，全程采用标准化模块设计，由专业工程师进行设备调试，以保证产品的高质量、高标准的要求。</p>
+                            <img style="margin: 0 auto;display: block;" class="img-responsive" src="images/clear.jpg"
+                                 alt="">
+                        </div>
+                        <div class="item">
+                        </div>
+                        <div class="item">
+                            <form class="form-horizontal">
+                                <div class="form-group">
+                                    <label for="inputEmail3" class="col-sm-2 control-label">联系人:</label>
+                                    <div class="col-sm-4">
+                                        <input type="text" class="form-control" id="">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="" class="col-sm-2 control-label">电话:</label>
+                                    <div class="col-sm-4">
+                                        <input type="tel" class="form-control" id="">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="" class="col-sm-2 control-label">地址:</label>
+                                    <div class="col-sm-4">
+                                        <input type="text" class="form-control" id="">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="" class="col-sm-2 control-label">邮箱:</label>
+                                    <div class="col-sm-4">
+                                        <input type="email" class="form-control" id="">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">备注:</label>
+                                    <div class="col-sm-6">
+                                        <textarea name="" class="form-control" id="" cols="30" rows="10"></textarea>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">验证码:</label>
+                                    <div class="col-sm-2">
+                                        <input type="text" class="form-control">
+
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-offset-2 col-sm-2">
+                                        <button type="submit" class="btn btn-default">马上订购</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script>
+    $('.pd-one-box').mouseover(function () {
+        $('.pd-one-box').eq($(this).index()).addClass('active').siblings().removeClass('active');
+        $('.carousel-inner .item').eq($(this).index()).addClass('active').siblings().removeClass('active');
+    });
+</script>

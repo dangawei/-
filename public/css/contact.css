@@ -1,0 +1,24 @@
+.nav{
+    position: inherit;
+}
+.contact-body{
+    background: url("../images/lx_bj.jpg") no-repeat top center;
+    margin-top: 103px;
+    color: #fff;
+    padding: 73px 0;
+}
+.ct-us-ch{
+    margin-bottom: 40px;
+}
+.ct-us-en,h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+.ct-us-name{
+    font-size: 16px;
+    font-weight: bold;
+}
+#allmap{
+    width: 100%;
+    height: 400px;
+}

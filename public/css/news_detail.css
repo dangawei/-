@@ -1,0 +1,30 @@
+.mt{
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 40px;
+}
+.news_detail .row h3{
+    text-align: center;
+    color:#0c5ba4 ;
+}
+.news_detail .row .img{
+    margin: 0 50px;
+}
+.news_detail .row img{
+    margin: 0 auto;
+    width: 100%;
+}
+.news_detail .row .content{
+    padding: 30px 0;
+    margin: 0 50px;
+}
+.news_detail .row .content llk{
+    text-indent:30px;
+    display: block;
+}
+@media screen and (max-width: 768px){
+    .news_detail .row h3{
+        font-size: 18px;
+        font-weight: bold;
+    }
+}

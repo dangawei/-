@@ -1,0 +1,86 @@
+<link rel="stylesheet" href="/css/about.css">
+<section class="mt bgcolor">
+    <div class="container bgc">
+        <div class="row clearfix main">
+            <div class="col-md-12 col-sm-12 col-xs-12 column">
+                <h2 class="about">
+                    关于我们
+                </h2>
+                <p id="main">集新能源开发、生态肥生产销售、固体废弃物再利用的生态环保高科技企业</p>
+                <img alt="140x140" src="images/jj_banner.jpg" class="img-responsive center-block"/>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+            <ul class="fb">
+                <li class="col-md-3 col-sm-3 col-xs-6 active on"data-target="#carousel-example-generic" data-slide-to="0">
+                    <div class="list_one list"></div>
+                    <span>公司简介</span>
+                    力争成为行业第一大品牌
+                </li>
+                <li class="col-md-3 col-sm-3 col-xs-6" data-target="#carousel-example-generic" data-slide-to="1">
+                    <div class="list_two list"></div>
+                    <span>企业文化</span>
+                    以质量求生存、以信誉谋发展
+                </li>
+                <li class="col-md-3 col-sm-3 col-xs-6" data-target="#carousel-example-generic" data-slide-to="2">
+                    <div class="list_three list"></div>
+                    <span>资质荣誉</span>
+                    以质量求生存、以信誉谋发展
+                </li>
+                <li class="col-md-3 col-sm-3 col-xs-6" data-target="#carousel-example-generic" data-slide-to="3">
+                    <div class="list_four list"></div>
+                    <span>公司架构</span>
+                    天行健，君子以自强不息
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel"> <!-- 删除slider可以解除轮播效果-->
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <div class="page">
+                            <p>新乡市中富科技股份有限公司隶属山水园林生态产业集团旗下，公司成立于2015年5月，注册资本金2000万元，位于河南省新乡市榆东产业集聚区，占地107亩，是一家集新能源开发、生态肥研发生产销售、固体废弃物再利用的生态环保高科技企业。生态建设已经成为实现中华民族伟大复兴的必由之路，建设美丽中国、生态中国已上升为国家战略，公司将肩负起“让祖国更生态”的企业使命，开发绿色清洁能源，保护生态环境，发展有机高效农业，保证食品安全，全力打造投资、研发、设计、设备制造、建设运营于一体的完整生态环保产业链，在全球视野中，彰显中国的生态环保创新力量!</p>
+                            <p>公司秉承“创新、绿色、服务、共享”的经营理念，加强与国内外知名院所及科研机构的合作，聚合国内外生态环保领域的高端人才、先进技术和设备，携手荷兰、德国等国际知名新能源研发企业，共同开发绿色清洁能源，发展有机生态农业。充分发挥各自优势，通过对农业、园林、养殖业及餐厨垃圾、生活垃圾等废弃物的回收再利用，开展生物质能发电、天然气工业化生产及生态肥的研发、生产、销售等。</p>
+                            <p class="fb_p">公司专门设立绿色能源研发实验室，对本土原材料特征进行实验分析，引进国际最先进的绿色能源技术及设备，通过对农牧业废弃物的回收，生产成为社会可再利用资源。公司的整套系统拥有欧洲CE认证，生产设备均达德国TÜV的要求，全程采用标准化模块设计，由专业工程师进行设备调试，以保证产品的高质量、高标准的要求。</p>
+                            <img src="images/clear.jpg" alt="" class="fb_img">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="page">
+                            <img src="images/logo.jpg" alt="" class="fb_logo" style="width: 300px;height: 100px;">
+                            <div class="fb_div"><strong>企业宗旨</strong><br/>以质量求生存、以信誉谋发展<br/><strong>企业精神</strong><br/>团结、创新、奉献、超越<br/><strong>企业目标</strong><br/>立足河南 面向全国 走向世界<br/><strong>企业理念</strong><br/>保护环境、服务社会、造福人类<br/><strong>企业使命</strong><br/>发展绿色能源，实现人与自然和谐共生<br/><strong>核心价值观</strong><br/>开拓创新、团结实干、立足诚信、追求卓越</div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="page">
+                            <img src="images/honor.jpg" alt="" class="blur img-responsive center-block">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="page">
+                            <img src="images/relation.jpg" alt="" class="img-responsive center-block">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="/js/jquery.min.js"></script>
+<script>
+    $('li').click(function(){
+        $(this).addClass('newstyle').siblings().removeClass('newstyle');
+        $(this).addClass('on').siblings().removeClass('on');
+    });
+    $(document).ready(function(){
+        $('#carousel-example-generic').carousel({interval:50000000});//每隔5秒自动轮播
+    });
+</script>

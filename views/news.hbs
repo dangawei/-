@@ -1,0 +1,22 @@
+<link rel="stylesheet" href="css/news.css">
+
+<div class="row mt">
+    <img src="images/news_banner.jpg" alt="" class="img-responsive center-block">
+</div>
+
+<div class="container news_page">
+    {{#each product}}
+        <div class="row">
+            <div class="news">
+                <div class="img">
+                    <img src="{{img}}" class="img-responsive">
+                </div>
+                <div class="content">
+                    <a href="/news_detail?id={{id}}"><h4 class="h4">{{title}}</h4></a>
+                    <span>{{news_date}}</span>
+                    {{{content}}}
+                </div>
+            </div>
+        </div>
+    {{/each}}
+</div>

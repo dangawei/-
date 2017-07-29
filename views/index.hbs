@@ -1,0 +1,143 @@
+<link rel="stylesheet" href="/css/index.css">
+<!-- banner -->
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+    <!-- 小圆点 -->
+    <ol class="carousel-indicators banner">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+    </ol>
+    <div class="carousel-inner" role="listbox">
+        <div class="item active" style="background-color: #243543;" >
+            <img src="images/idx_bann1.jpg" alt="...">
+        </div>
+        <div class="item" style="background-color: #f5e5dd;">
+            <img src="images/idx_bann2.jpg" alt="...">
+        </div>
+        <div class="item" style="background-color: #db282c;">
+            <img src="images/idx_bann3.jpg" alt="...">
+        </div>
+        <div class="item" style="background-color: #db282c;">
+            <img src="images/idx_bann4.jpg" alt="...">
+        </div>
+    </div>
+    <!--<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">-->
+        <!--<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>-->
+    <!--</a>-->
+    <!--<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">-->
+        <!--<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>-->
+    <!--</a>-->
+</div>
+<!-- news & search -->
+<div class="notice wrap">
+    <div class="news f_left">
+        <span>最新动态：</span>
+        <marquee scrollamount="1" direction="up">
+        {{#each news}}
+            <li><a href="/news/{{id}}" target="_blank">{{title}}</a></li>
+        {{/each}}
+        </marquee>
+    </div>
+    <div class="search f_right">
+        <form>
+            <input type="text" class="inp" placeholder="请输入......">
+            <input type="submit" class="subBtn" value="站内搜索">
+        </form>
+    </div>
+</div>
+<!-- 产品 -->
+<div class="product">
+    <div class="header">
+        <div class="title">
+            <span>生态环保高科技</span>
+            <b>产品工艺</b>
+        </div>
+    </div>
+    <div class="container move_up">
+        <div class="row">
+            <div class="col-md-4 col-sm-4">
+                <li><span class="title">原料加工</span>
+                    <p class="con">公司将秉承“创新、诚信、服务、共赢”的经营理念，加强与国内外的知名院所和科研机构合作，勤于探索、不断创新，专业开发研制新型高性能的生态环保产品。 </p>
+                    <img src="/images/idx_pt1.jpg"></li>
+            </div>
+
+            <div class="col-md-4 col-sm-4">
+                <li><span class="title">生物质天然气</span>
+                    <p class="con">目前已和荷兰、德国、韩国多家公司就开发绿色清洁能源，发展有机生态农业达成合作意向，决定充分发挥各自优势，携手共赢开发中国生态环保市场。 </p>
+                    <img src="/images/idx_pt2.jpg"></li>
+            </div>
+            <div class="col-md-4 col-sm-4">
+                <li><span class="title">生态肥生产销售</span>
+                    <p class="con">
+                        注册资本金2000万元，位于新乡市榆东产业集聚区，占地108亩，拥有专业的研发工程楼和标准化生产厂房，是山水园林生态产业集团旗下的一家集新能源开发、生态肥生产销售、固体废弃 </p>
+                    <img src="/images/idx_pt3.jpg"></li>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 简介 -->
+<div class="jj">
+    <div class="summary">
+        <img src="/images/jj_01.jpg" alt="" class="img-responsive" >
+        <div class="detail">
+            <div class="box">
+                <div class="title"></div>
+                <p>
+                    新乡市中富科技股份有限公司隶属山水园林生态产业集团旗下，公司成立于2015年5月，注册资本金2000万元，位于河南省新乡市榆东产业集聚区，占地107亩，是一家集新能源开发、生态肥研发生产销售、固体废弃物再利用的生态环保高科技企业。生态建设已经成为实现中华民族伟大复兴的必由之路，建设美丽中国、生态中国已上升为国家战略，公司将肩负起“让祖国更生态”的企业使命，开发绿色清洁能源，保护生态......
+                    <a href="/about"><strong>[了解更多]</strong></a>
+                </p>
+                <a class="more" href="/about">查看更多</a>
+            </div>
+        </div>
+        <div class="container">
+            <div class="services row">
+                <div class="col-md-3 col-sm-6">
+                    <li><span>2000万元</span>在全球视野中，彰显中国的生态<br>环保创新力量！</li>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <li><span>标准化生产厂房</span>专业的研发工程楼<br>和标准化生产厂房</li>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <li><span>全方位的服务</span>售前、售中、售后<br>环节为提供全方位的服务</li>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <li><span>完整产业链</span>打造投资、研发、设计、<br>设备制造、建设运营于一体完整产业链</li>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 轮播 -->
+<div class="lb">
+    <div class="container">
+        <div class="row clearfix">
+            <div class="col-md-12 column">
+                <div class="carousel slide" id="carousel-537999" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li class="active" data-slide-to="0" data-target="#carousel-537999">
+                        </li>
+                        <li data-slide-to="1" data-target="#carousel-537999">
+                        </li>
+                        <li data-slide-to="2" data-target="#carousel-537999">
+                        </li>
+                    </ol>
+                    <div class="carousel-inner">
+                        {{#each news}}
+                        <div class="item">
+                            <img alt="" src="{{img}}"/>
+                            <div class="carousel-caption">
+                                <h4>{{title}}</h4>
+                                <p>{{{content}}}</p>
+                            </div>
+                        </div>
+                        {{/each}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $('.lb .item:first').addClass('active');
+</script>

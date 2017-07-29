@@ -1,0 +1,59 @@
+body{
+    width: 100%;
+    overflow-x: hidden;
+}
+.section{
+    margin-top: 50px;
+}
+label.error{
+    color: red;
+}
+textarea{
+    resize: none;
+}
+.nav{
+    position: relative;
+    top: 0;
+}
+.j_main{
+    max-width: 1200px;
+    margin: 0 auto 20px;
+    position: relative;
+}
+.j_logo img{
+    margin-left: 11px;
+    width: 100%;
+}
+.j_form tr{
+    color: #444444;
+    font-weight: normal;
+    font-size: 14px;
+    font-family: 'Microsoft YaHei',arial;
+}
+.j_form .captcha{
+    width:80px;
+    vertical-align:middle;
+}
+.j_form #verCode{
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+    width: 80px;
+    height: 28px;
+}
+@media screen and (max-width: 767px) {
+    header.top{
+        display: none;
+    }
+    .nav{
+        left: 0;
+    }
+    .j_logo{
+        display: none;
+    }
+}
+@media screen and (max-width: 500px) {
+    label.col-xs-2{
+        padding-right: 0;
+    }
+}

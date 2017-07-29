@@ -1,0 +1,251 @@
+*{
+    font-family: "Microsoft YaHei";
+    font-size: 14px;
+}
+/*body{
+    min-width: 768px;!important;
+}*/
+.margin-0{
+    margin: 0;
+}
+.text-white{
+    color: #fff;
+}
+/*页头部分*/
+header{
+    line-height: 38px;
+    background: url("../images/bj.png") repeat-x top left;
+    color: white;
+    overflow: hidden;
+}
+.head-left{
+    color: #bbdbd2;
+}
+.head-right a{
+    text-decoration: none;
+    color: white;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+.head-right a:hover{
+    color: white;
+}
+.modal-dialog{
+    width: 400px;
+}
+.modal-img{
+    height: 374px;
+    width: 374px;
+    margin: 0 auto;
+}
+.nav{
+    background-color: rgba(255,255,255,.8);
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 38px;
+    z-index: 1;
+}
+.logo{
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding-top: 2px;
+}
+.nav-list{
+    overflow: hidden;
+}
+.nav-list a{
+    display: inline-block;
+    padding-top: 35px;
+    width: 12.5%;
+    height: 100%;
+    line-height: 68px;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    text-align: center;
+    float: left;
+    /*opacity: 0;*/
+}
+.nav-list a:hover{
+    background-color: #19bc98;
+    color: white;
+}
+.nav-list .menu{
+    display: none;
+}
+
+/*页脚部分*/
+.end{
+    background-color: #1b9d80;
+}
+.end-box{
+    background: url("../images/end_lx.png") no-repeat top center;
+}
+.end-left,.end-right{
+    /*height: 391px;*/
+}
+.end-left{
+    background: url("../images/end_left.png") no-repeat 58px 30px;
+    position: relative;
+    padding: 232px 0 0 58px;
+    color: #a8d2c6;
+}
+.tel-abs{
+    position: absolute;
+    top: 161px;
+    left: 98px;
+    color: #FFF;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 42px;
+    font-weight: bold;
+}
+.end-right{
+    background: url("../images/end_right.png") no-repeat center 35px;
+    color: white;
+}
+.end-right h4{
+    padding-top: 75px;
+}
+.end-right form{
+    padding-top: 20px;
+}
+.end-right form input{
+    width: 30%;
+    height: 38px;
+    color: #FFF !important;
+    line-height: 38px;
+    padding: 0 18px;
+    margin: 0 7px 7px 0;
+    background: #188d73;
+    border: 0;
+    border-radius: 5px;
+}
+.end-right form textarea{
+    background: #188d73;
+    width: 100%;
+    height: 70px;
+    padding: 10px 18px;
+    margin-bottom: 7px;
+    color: #FFF !important;
+    display: block;
+    border: 0;
+    border-radius: 5px;
+}
+footer{
+    padding: 15px 0;
+    background-color: #eaeae6;
+    color: #959592;
+}
+.foot-left a{
+    text-decoration: none;
+    color: #959592;
+}
+.foot-right,.foot-left{
+    font-size: 12px;
+}
+@media (min-width: 1200px){
+    .mt{
+        margin-top: 103px;
+    }
+    .nav-list{
+        display: block;
+    }
+    .menu{
+        display: none;
+    }
+}
+@media (max-width: 1200px){
+    .nav-list{
+        height: 83px;
+    }
+    .nav-list a{
+        font-size: 16px;
+        padding-top: 30px;
+        line-height: 63px;
+    }
+    .mt{
+        margin-top: 83px;
+    }
+    .menu{
+        display: none;
+    }
+    .nav-list{
+        display: block;
+    }
+}
+@media (max-width: 992px) {
+    .nav-list{
+        height: 63px;
+    }
+    .nav-list a{
+        font-size: 14px;
+        padding-top: 25px;
+        line-height: 40px;
+    }
+    .end-box{
+        background: #1b9d80;
+    }
+    .mt{
+        margin-top: 63px;
+    }
+    .menu{
+        display: none;
+    }
+    .nav-list{
+        display: block;
+    }
+}
+@media (max-width: 768px) {
+    .head-left{
+        font-size: 12px;
+    }
+    .nav{
+        position: inherit;
+        transform: translateX(0);
+    }
+    .nav-list{
+        height: 184px;
+        display: none;
+    }
+    .nav-list a{
+        width: 50%;
+        height: 46px;
+        font-size: 12px;
+        padding-top: 16px;
+        line-height: 15px;
+        display: block;
+    }
+    .end-box{
+        background: #1b9d80;
+    }
+    .mt{
+        margin-top: 0;
+    }
+    .pd-banner{
+        margin: 0;
+    }
+    .end-right form input{
+        width: 100%;
+    }
+    .logo{
+        height: 50px;
+        width: auto;
+    }
+    .menu{
+        display: block;
+        font-size: 25px;
+        float: right;
+        position: absolute;
+        top: 15px;
+        right: 10px;
+        cursor: pointer;
+    }
+    .tel-abs{
+        font-size: 30px;
+        top: 171px;
+    }
+}
